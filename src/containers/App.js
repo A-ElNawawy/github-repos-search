@@ -23,21 +23,18 @@ const App = () => {
         setLoading(false);
       });
   };
-  console.log(Repos);
+
   return (
     <div className="App">
       {Loading && <Overlay>Loading ...</Overlay>}
+
       <SearchContext.Provider
         value={{ SearchField, setSearchField, handleSearchButton }}
       >
-      <Container>
-
-        <WelcomePage />
-        {
-          Repos &&
-        <Table Repos={Repos}/>
-        }
-      </Container>
+        <Container>
+          <WelcomePage />
+          {Repos && <Table Repos={Repos} />}
+        </Container>
       </SearchContext.Provider>
     </div>
   );

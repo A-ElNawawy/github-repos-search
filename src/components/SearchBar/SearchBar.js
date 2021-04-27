@@ -5,16 +5,19 @@ import SearchContext from "./../../context/SearchContext";
 
 const SearchBar = () => {
   const searchContext = useContext(SearchContext);
-  //console.log(searchContext);
+
   return (
     <div className="SearchBar">
       <input
         type="search"
         value={searchContext.SearchField}
-        //autoFocus
-        //defaultValue=""
+        autoFocus
         onChange={(e) => {
           searchContext.setSearchField(e.target.value);
+        }}
+        onKeyPress={(e) => {
+          e.charCode === 13 &&
+            searchContext.handleSearchButton(searchContext.SearchField);
         }}
       />
       <button
@@ -22,7 +25,7 @@ const SearchBar = () => {
           searchContext.handleSearchButton(searchContext.SearchField)
         }
       >
-        search
+        Search
       </button>
     </div>
   );
