@@ -1,0 +1,8 @@
+.SearchBar input {
+  border-radius: 5px;
+  border-color: blue;
+  width: 40vw;
+  height: 10vmin;
+  font-size: 3vw;
+  padding: 10px;
+}

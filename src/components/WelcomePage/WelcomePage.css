@@ -1,0 +1,15 @@
+.WelcomePage {
+  /*text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;*/
+}
+
+.WelcomePage h2 {
+  width: 100%;
+  font-size: 4vw;
+  /*margin-top: 2vh;*/
+  margin-bottom: 4vh;
+}
