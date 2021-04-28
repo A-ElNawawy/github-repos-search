@@ -9,7 +9,7 @@
 
 .SearchBar input {
   border-radius: 5px;
-  border-color: blue;
+  border-color: red;
   width: 40vmin;
   height: 10vmin;
   font-size: 3vmin;
@@ -21,7 +21,7 @@
   all: unset;
   cursor: pointer;
   border-radius: 5px;
-  background-color: blue;
+  background-color: red;
   color: white;
   width: 40vmin;
   height: 10vmin;
